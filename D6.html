@@ -35,7 +35,7 @@
 
   <body>
     <div>
-      <h1>Questo è il titolo della pagina</h1>
+      <h1 id="idH1">Questo è il titolo della pagina</h1>
       <h2>Questo è il sottotitolo della pagina</h2>
     </div>
 
@@ -178,13 +178,18 @@
          Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
         */
 
-      const makeItClickable = function () {};
-
+      const makeItClickable = function (h1) {
+        console.log("ciao");
+        for (let i = 0; i < firstH1.length; i++) {
+          const h1Arr = firsth1.innerText.splice();
+          firstH1.slice(firstH1.lenght, 1);
+        }
+      };
+      let quello = document.getElementById("idH1");
+      quello.addEventListener("click", makeItClickable(firstH1));
       /* ESERCIZIO 10
          Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
         */
-
-      const revealFooterLink = function () {};
 
       /* ESERCIZIO 11
          Crea una funzione che crei una tabella nell'elemento con id "tableArea".
